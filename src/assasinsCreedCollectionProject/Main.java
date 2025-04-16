@@ -4,12 +4,14 @@
  */
 package assasinsCreedCollectionProject;
 
+import java.io.IOException;
+
 /**
  *
  * @author Soliloquy
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException, ClassNotFoundException{
         
         Gremio gremio = new Gremio();
         
@@ -42,5 +44,18 @@ public class Main {
         gremio.mostrarInventario();
         
         gremio.eliminarDeInventario("Espada del Eden");
+        
+        System.out.println();
+        gremio.guardarAsesinosEnArchivo("listaAsesinos.txt");
+        gremio.cargarAsesinosDesdeArchivos("listaAsesinos.txt");
+        
+        System.out.println();
+        gremio.guardarInventarioEnArchivo("inventario.txt");
+        gremio.limpiarInventario();
+        System.out.println("INVENTARIO LUEGO DE LIMPIEZA:");
+        gremio.mostrarInventario();
+        System.out.println("INVENTARIO LUEGO DE CARGAR EL ARCHIVO:");
+        gremio.cargarInventarioDesdeArchivo("inventario.txt");
+        gremio.mostrarInventario();
     }
 }
