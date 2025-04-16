@@ -27,10 +27,25 @@ public class Asesino extends Personaje {
      * @param arma_favorita
      * @param nombre
      */
-    public Asesino(int edad, String arma_favorita, String nombre) {
+    public Asesino(int edad, String rango, String arma_favorita, String nombre) {    
         super(nombre);
         this.edad = edad;
         this.arma_favorita = arma_favorita;
+        rango = rango.toUpperCase();
+        switch (rango){
+            case "INICIADO":
+                this.rango = RANGO.INICIADO;
+                break;
+            case "MAESTRO":
+                this.rango = RANGO.MAESTRO;
+                break;
+            case "MENTOR":
+                this.rango = RANGO.MENTOR;
+                break;
+            default:
+                System.out.println("ERROR: RANGO NO DISPONIBLE.ELIJA ENTRE INICIADO, MAESTRO O MENTOR.");
+                break;
+        }
     }
 
     /**
