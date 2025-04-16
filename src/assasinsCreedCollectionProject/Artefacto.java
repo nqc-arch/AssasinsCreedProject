@@ -4,13 +4,14 @@
  */
 package assasinsCreedCollectionProject;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author Soliloquy
  */
-public class Artefacto {
+public class Artefacto implements Serializable {
 
     private String nombre;
     private String origen;

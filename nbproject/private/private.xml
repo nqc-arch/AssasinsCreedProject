@@ -2,12 +2,22 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group name="FPFiles">
             <file>file:/C:/Users/Soliloquy/Desktop/fp_dam/programacion/netbeans/java/AssasinsCreedProject/src/assasinsCreedCollectionProject/Main.java</file>
             <file>file:/C:/Users/Soliloquy/Desktop/fp_dam/programacion/netbeans/java/AssasinsCreedProject/src/assasinsCreedCollectionProject/Asesino.java</file>
             <file>file:/C:/Users/Soliloquy/Desktop/fp_dam/programacion/netbeans/java/AssasinsCreedProject/src/assasinsCreedCollectionProject/Artefacto.java</file>
             <file>file:/C:/Users/Soliloquy/Desktop/fp_dam/programacion/netbeans/java/AssasinsCreedProject/src/assasinsCreedCollectionProject/Temple.java</file>
             <file>file:/C:/Users/Soliloquy/Desktop/fp_dam/programacion/netbeans/java/AssasinsCreedProject/src/assasinsCreedCollectionProject/Gremio.java</file>
+=======
+        <group name="Exams">
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/ObjectOutputStreamSinCabecera.java</file>
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/Artefacto.java</file>
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/Main.java</file>
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/Gremio.java</file>
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/Asesino.java</file>
+            <file>file:/C:/Users/dam117/Desktop/progra/java/H08Fiche07/El%20Credo%20de%20los%20Asesinos/src/assasinsCreedCollectionProject/Personaje.java</file>
+>>>>>>> 834c5a5cefeb87c68637d142421e2118f101cdb9
         </group>
     </open-files>
 </project-private>

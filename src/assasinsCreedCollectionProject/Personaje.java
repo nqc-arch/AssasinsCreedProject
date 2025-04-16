@@ -4,13 +4,14 @@
  */
 package assasinsCreedCollectionProject;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author dam117
  */
-public abstract class Personaje {
+public abstract class Personaje implements Serializable {
 
     protected String nombre;
 

@@ -4,6 +4,11 @@
  */
 package assasinsCreedCollectionProject;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Collections;
 import java.util.TreeSet;
 
@@ -83,4 +88,62 @@ public class Temple {
         }
     }
     
+    /**
+     * Guarda los objetos Templarios en el archivo especificado por parametro
+     * 
+     * @param archivo
+     * @throws IOException 
+     */
+    public void guardarTemplariosEnArchivo(String archivo) throws IOException{
+         ObjectOutputStream fos = null;
+        try {
+
+            fos = new ObjectOutputStream(new FileOutputStream(archivo, false));
+            for (Templario templario : conjuntoTemplarios) {
+                fos.writeObject(templario);
+            }
+            System.out.println("TEMPLARIOS GUARDADOS CON EXITO.");
+        } catch (IOException ex) {
+            System.out.println(ex);
+        } finally {
+            if (fos != null) {
+                fos.close();
+            }
+        }
+    }
+    
+    /**
+     * Carga los datos de los templarios desde el archivo de texto especificado como parametro
+     * @param archivo
+     * @throws ClassNotFoundException
+     * @throws IOException 
+     */
+    public void cargarTemplariosDesdeArchivo(String archivo) throws ClassNotFoundException, IOException{
+        System.out.println("CARGA DE TEMPLARIOS DESDE ARCHIVO " + archivo);
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(new FileInputStream(archivo));
+            while(true){
+                conjuntoTemplarios.add((Templario) ois.readObject());
+            }
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            if (ois != null) {
+                ois.close();
+            }
+        }
+    }
+    
+    /**
+     * Elimina todos los datos de los Templarios guardados
+     */
+    public void limpiarTemplarios(){
+        conjuntoTemplarios.clear();
+        System.out.println("TEMPLARIOS ELIMINADOS CON EXITO");
+    }
+    
+    public void exportarDatos(String archivo){
+        
+    }
 }
